@@ -14,6 +14,7 @@ import Connect from "components/Account/Connect";
 
 import NFTBalance from "components/NFTBalance";
 import NFTTokenIds from "components/NFTTokenIds";
+import ScrollToTop from "components/ScrollToTop";
 
 import {Layout} from "antd";
 import "antd/dist/antd.css";
@@ -44,6 +45,7 @@ const App = ({ isServerInfo }) => {
           </div>
         </header>
         <div>
+        <ScrollToTop>
           <Switch>
             <Content>
               <div style={{ minHeight: "280px" }}>
@@ -71,6 +73,8 @@ const App = ({ isServerInfo }) => {
               </div>
             </Content>
           </Switch>
+        </ScrollToTop>
+          
           {/* <Redirect to="/NFTMarketPlace" /> */}
         </div>
         <Footer style={{ padding: "0px" }}>
