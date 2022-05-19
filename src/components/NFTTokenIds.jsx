@@ -257,9 +257,8 @@ function NFTTokenIds({ inputValue, setInputValue }) {
 
           {inputValue !== "explore" &&
 
-            {isLoading} ?
-            (<Skeleton active />)
-            : (NFTTokenIds.slice(0, 20).map((nft, index) => (
+            
+              NFTTokenIds.slice(0, 20).map((nft, index) => (
               <div className="col picture-item" style={{ cursor : "pointer" }} key={index} onClick={() => setInputValue(nft?.addrs)}>
                 <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
             
@@ -288,7 +287,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                 </div>
               </div>
             ))
-            )}
+            }
          </div>
         </div>
         {getMarketItem(nftToBuy) ? (

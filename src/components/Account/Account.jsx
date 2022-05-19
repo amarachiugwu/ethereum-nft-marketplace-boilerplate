@@ -50,10 +50,10 @@ function Account() {
     useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
-  // console.log(isAuthenticated);
-  // console.log(account);
-  // console.log(chainId);
-  // console.log(authenticate);
+  console.log(isAuthenticated);
+  console.log(account);
+  console.log(chainId);
+  console.log(authenticate);
 
 
 
@@ -62,7 +62,7 @@ function Account() {
     return (
       <>
 
-        <li className="list-inline-item mb-0" style={{ margin: "20px 10px" }}>
+        <li className="list-inline-item mb-0" style={{ margin: "20px 10px", display:"inline-block" }}>
           <div className="dropdown dropdown-primary">
               <Link to="/connect" type="button" className="btn btn-pills p-0"> <span class="btn-icon-dark"><span class="btn btn-icon btn-pills btn-primary"><i class="uil uil-user fs-6"></i></span></span></Link>
               {/* <div className="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 pb-3 pt-0 overflow-hidden rounded" style={{ minWidth: "200px" }}>
@@ -76,7 +76,7 @@ function Account() {
           </div>
         </li>
 
-        <li className="list-inline-item mb-0 me-1" onClick={() => setIsAuthModalVisible(true)} style={{ margin: "20px 10px" }}>
+        <li className="list-inline-item mb-0 me-1" onClick={() => setIsAuthModalVisible(true)} style={{ margin: "20px 10px", display:"inline-block" }}>
           <a id="connectWallet"  style={{ paddingTop: "3px"}}>
               <span className="btn-icon-dark"><span className="btn btn-icon btn-pills btn-primary"><i className="uil uil-wallet fs-6"></i></span></span>
           </a>

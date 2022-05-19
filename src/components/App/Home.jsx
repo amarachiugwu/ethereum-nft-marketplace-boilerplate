@@ -43,7 +43,8 @@ export default function Home({ inputValue, setInputValue }) {
                         <p className="text-dark-50 para-desc mb-0 mb-0">We are a huge marketplace dedicated to connecting great artists of all Apeware with their fans and unique token collectors!</p>
                     
                         <div className="mt-4 pt-2">
-                            <Link to="/NFTMarketPlace" className="btn btn-pills btn-primary">Discover Now</Link>
+                            <Link to="/NFTMarketPlace" className="btn btn-pills btn-primary" style={{ width:"140px", fontSize:"18px", fontWeight:"bold" ,padding:"10px", marginRight:"20px" }}>Explore</Link>
+                            <Link to="/" className="btn btn-pills btn-primary" style={{ width:"140px", fontSize:"18px", fontWeight:"bold" ,padding:"10px" }}>Create</Link>
                         </div>
                     </div>
                 </div>

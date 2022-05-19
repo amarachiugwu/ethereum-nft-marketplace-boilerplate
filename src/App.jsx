@@ -39,7 +39,7 @@ const App = ({ isServerInfo }) => {
     <Layout className="layout" >
       <Router>
         
-        <header id="topnav" className="defaultscroll sticky">
+        <header id="topnav" className="defaultscroll sticky nav-sticky">
           <div className="container">
             <HeaderContent />
           </div>
